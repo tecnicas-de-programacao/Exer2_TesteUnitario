@@ -9,7 +9,6 @@ public class Funcionario
 {
     private String nome;
     private double salBruto;
-    private Strig eca;
 
     public Funcionario (String nome, double salBruto){
         nome = this.nome;
@@ -28,7 +27,7 @@ public class Funcionario
     double getIR() {
         double ir = 0;
         if (salBruto > 2500)
-            ir = 12 * salBruto;
+            ir = (12.0/100) * (salBruto - 2500);
         return ir;    
     }
 
